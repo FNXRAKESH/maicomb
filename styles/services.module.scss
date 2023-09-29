@@ -1,0 +1,79 @@
+#services{
+    .header {
+            min-height: 500px;
+            background-color: azure;
+            background: url('../public/contact/header.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .title{
+                background-color: rgba($color: #000000, $alpha: 0.2);
+                color:#fff;
+                padding:10px 25px;
+                border-radius: 10px;
+            }
+        }
+                .card1, .card2, .card3,.card4,.card5 {
+
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    
+                    height: 400px;
+                    position: relative;
+                    background-size: cover;
+                    h3 {
+                        margin: 0;
+                        color:#fff;
+                        background-color: rgba(0, 0, 0, 0.25);
+                        padding:15px 25px;
+                        border-radius: 10px;
+                    }
+                }
+                .card1{
+                    background: url('../public/services/design.png');
+                    
+                }
+                .card2 {
+                    background: url('../public/services/dev.png');
+                }
+                .card3 {
+                    background: url('../public/services/prototype.png');
+                }
+                .card4 {
+                background: url('../public/services/manufacture.png');
+                }
+                .card5 {
+                    background: url('../public/services/patent.png');
+                }
+                .formData {
+                    background-color: #f5f5f5;
+                    
+
+                    input,
+                    textarea {
+                        background-color: transparent;
+                        border: 0;
+                        border-bottom: 1px solid rgba(177, 143, 70,1);;
+                        border-radius: 0;
+                        color: #000;
+                        box-shadow: none !important;
+                    }
+
+                    input:-webkit-autofill {
+                        -webkit-text-fill-color: #000;
+                        transition: background-color 5000s ease-in-out 0s;
+                    }
+
+                    button:hover {
+                        background-color: rgba(177, 143, 70,1);;
+
+                    }
+                }
+}

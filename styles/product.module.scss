@@ -1,0 +1,70 @@
+#product {
+    .header {
+        // min-height: 90vh;
+        background-color: azure;
+        // background: url('../public/treatment/header.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+      
+    }
+         .video {
+             width: 100%;
+             height: 100%;
+             z-index: 0;
+             position: absolute;
+    
+    
+             video {
+                width: 100%;
+                object-fit: fill;
+                  height: 100%;
+                 // border: 2px solid #B18F46;
+             }
+         }
+
+         .title {
+             position: relative;
+             margin-bottom: 25px;
+            width: max-content;
+            
+    
+         }
+    
+         .title::before {
+             content: '';
+             position: absolute;
+             height: 2px;
+             width: 60px;
+             left: 0;
+             right: 0;
+             margin-left: auto;
+             margin-right: auto;
+             background-color: rgba(177, 143, 70, 1);
+             bottom: -10px;
+             transform: 50% 50%;
+         }
+         #brownBg{
+            background-color: #edd5d4;
+         }
+                 #greenBg {
+                     background-color: #bbeece;
+                 }
+                                  #blueBg {
+                                      background-color: #a3aef3;
+                                  }
+                                  #yellowBg{
+                                        background-color: #f3f0a3;
+                                  }
+}
+
+@media screen and (max-width:768px) {
+    .title{
+        width: 100% !important;
+    }
+}

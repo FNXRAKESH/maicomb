@@ -1,0 +1,25 @@
+#testimonial {
+    background-color: #f7f5f2;
+    .cardContainer {
+        background-color: #fff;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        width: 90% !important;
+        border-radius: 20px;
+        
+        cursor: pointer;
+        margin:0 20px;
+        .imgContainer {
+            padding: 20px
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    #testimonial {
+        .cardContainer {
+            display: block;
+        }
+    }
+}

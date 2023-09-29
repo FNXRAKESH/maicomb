@@ -1,0 +1,32 @@
+#concept{
+    a{
+        text-decoration: none;
+        
+    }
+     .imgContainer{
+        position: relative;
+       
+        img{
+            position: absolute;
+            width: 100%;
+            height: auto;
+            bottom: 0%;
+            right:0;
+            opacity: 0.25;
+            transform: rotate(300deg);
+            pointer-events: none;
+        }
+     }
+}
+
+@media screen and (max-width: 543px) {
+    #concept{
+        .imgContainer{
+            
+           button{
+            width: fit-content;
+            margin: 0 auto;
+           }
+        }
+    }
+}

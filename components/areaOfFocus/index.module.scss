@@ -1,0 +1,45 @@
+#areaOfFocus{
+    background-color: #fff;
+    .focus{
+         
+        // box-shadow: 20px 2px 20px #a5a5a5;
+        margin-bottom: 20px;
+        p{
+            padding: 10px;
+            text-align: justify;
+        }
+        
+    }
+    
+}
+#about{
+     p{text-align: justify;}
+}
+.parallax {
+    background-image: url('../../public/itching/people2.jpg');
+    width: 100%;
+    /* Full height */
+    height: 800px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width:768px) {
+    #areaOfFocus{
+        div{margin:0 !important}
+.focus{
+    width:100%;
+    margin:10px 0 !important
+}
+ #about {
+margin: 10px 0 !important;
+img{
+    margin-bottom: 30px !important;
+}
+ }
+    }
+}

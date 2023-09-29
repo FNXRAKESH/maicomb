@@ -1,0 +1,23 @@
+#itches{
+    // background-color: #fff;
+position: relative;
+    svg{
+        color: rgba(177, 143, 70,1);;
+        padding-right: 15px;
+    }
+    p{text-align: justify;}
+         .video {
+             width: 100%;
+             z-index: 0;
+             position: relative;
+    
+             height: 100%;
+    
+             video {
+                 height: 100%;
+                 width: 100%;
+                 object-fit: cover;
+                 // border: 2px solid #B18F46;
+             }
+         }
+}

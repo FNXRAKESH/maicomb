@@ -1,0 +1,164 @@
+#scalpCare {
+    .header {
+        // min-height: 90vh;
+        background-color: azure;
+        // background: url('../public/treatment/header.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+       
+    }
+
+        .video {
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            position: absolute;
+    
+    
+            video {
+                width: 100%;
+                object-fit: fill;
+                height: 100%;
+                // border: 2px solid #B18F46;
+            }
+        }
+
+    .title {
+        position: relative;
+        margin-bottom: 25px;
+        width: max-content;
+
+
+    }
+
+    .title::before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 60px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(177, 143, 70, 1);
+        bottom: -10px;
+        transform: 50% 50%;
+    }
+    .subTitle{
+        color:rgba(177, 143, 70, 1);
+    }
+    .popUp{
+        padding:15px 25px;
+        background-color: #fff;
+        color: #000;
+        border-radius: 30px;
+        width: fit-content;
+        position: absolute;
+        box-shadow: 2px 2px 10px #b5b5b5;
+        
+         
+    }
+    ul{
+         
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+         
+        li{
+            padding: 10px;
+             margin-left: 10px;
+            color: #000;
+             
+            display: grid;
+            align-items: center;
+            position: relative;
+        }
+        ::before{
+            content: '';
+            position: absolute;
+            
+            left: -15px;
+            top:17px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            z-index: 1;
+        }
+        ::after{
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 12px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #B18F46;
+            z-index: 0;
+        }
+    }
+    .parallax{
+        background-image: url('../public/scalp/band.jpg');
+            width: 100%;
+            /* Full height */
+            height: 700px;
+        
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+    }
+    .hibiscusFlower{
+        position: absolute;
+        opacity: 0.25;
+        height: 600px;
+        width: auto;
+        right:400px;
+        top:-300px;
+        transform: rotate(280deg);
+        pointer-events: none;
+    }
+    .mintFlower{
+        position: absolute;
+            opacity: 0.25;
+            height: 400px;
+            width: auto;
+            right :0px;
+            bottom: 0px;
+            transform: rotate(300deg);
+            pointer-events: none;
+    }
+        .neem {
+            position: absolute;
+            opacity: 0.25;
+            height: 400px;
+            width: auto;
+            left: 0px;
+            bottom: 0px;
+            transform: rotate(45deg);
+            pointer-events: none;
+        }
+                .ginger {
+                    position: absolute;
+                    opacity: 0.25;
+                    height: 400px;
+                    width: auto;
+                    left: 0px;
+                    bottom: 0px;
+                    transform: rotate(245deg);
+                    pointer-events: none;
+                }
+}
+
+@media screen and (max-width:768px) {
+    .title {
+        width: 100% !important;
+    }
+}

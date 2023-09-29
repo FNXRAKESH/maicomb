@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
+.intro{
+    // position: relative;
+    // min-height: 85vh;
+    // width:100%;
+    // align-items: flex-start;
+    // display: flex;
+    // justify-content: center;
+    
+    h1{
+        // font-family: 'Ysabeau Office', sans-serif;
+        
+        font-size: 3.5rem !important;
+        // text-shadow: -1px 1px 3px #666666, 1px 1px 3px #666666, 1px -1px 3px #666666, -1px -1px 3px #666666;
+    }
+    // p{text-shadow: -1px 1px 3px #666666, 1px 1px 3px #666666, 1px -1px 3px #666666, -1px -1px 3px #666666;}
+     
+     .video{
+        width: 100%;
+        z-index: 0;
+        position: absolute; 
+        
+        height: 100%;
+        
+        video{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            // border: 2px solid #B18F46;
+        }
+     }
+     button:hover{
+        color: #B18F46 !important;
+     }
+     #content{
+        position: relative;
+      width: 100%;
+         
+        #heading{
+            // text-shadow: -1px 1px 5px #B18F46, 1px 1px 5px #B18F46, 1px -1px 5px #B18F46, -1px -1px 5px #B18F46;
+        background-color: rgba($color: #000, $alpha: 0.5); 
+          padding: 5px 0;
+           
+           width: 100%;
+           h1,p{
+            color: #ffffff !important;
+            text-align: center;
+            
+           }
+        }
+
+     }
+     .wrap{
+        background-color: rgba($color: #fff, $alpha: 0.5);
+        padding:10px;
+        border-radius: 10px;
+        border: 2px solid #B18F46;
+     }
+    h1{
+        text-transform: uppercase;
+        color:#000;
+         font-size: 2.4rem;
+        // text-shadow: -1px 1px 3px #fff, 1px 1px 3px #fff, 1px -1px 3px #fff, -1px -1px 3px #fff;
+       
+    }
+    p{
+        align-items: center;
+        color:#000;
+        font-size: 18px;
+        .line{
+            height: 2px;
+            width: 30px;
+            background-color: #000;
+            margin-right: 20px;
+        }
+    }
+    button{
+        padding: 10px 30px;
+        border-color: #B18F46;
+        color: #B18F46;
+    }
+}
+
+#intro1{
+
+    h1 {
+            text-transform: uppercase;
+            color: #000;
+            font-size: 4rem;
+            text-shadow: -1px 1px 3px #fff, 1px 1px 3px #fff, 1px -1px 3px #fff, -1px -1px 3px #fff;
+    
+        }
+    
+        p {
+            align-items: center;
+          
+            font-size: 24px;
+    
+            .line {
+                height: 2px;
+                width: 50px;
+                background-color: #000;
+                margin-right: 10px;
+            }
+        }
+}
+
+
+@media screen and (max-width:1368px) {
+    
+    .intro{
+       
+       
+        text-align: center;
+        
+        #content{
+            left:0;
+            justify-content: flex-start !important;
+            align-items: flex-start; 
+            h1{
+                text-shadow: -1px 1px 3px #000, 1px 1px 3px #000, 1px -1px 3px #000, -1px -1px 3px #000;
+                text-align: left;
+            }
+            p{
+                // text-shadow: -1px 1px 5px #fff, 1px 1px 5px #fff, 1px -1px 5px #fff, -1px -1px 5px #fff;
+                text-align: center;
+                font-size: 15px;
+            }
+           
+        }
+        }
+}
+@media screen and (max-width:1200px) {
+    .intro{
+        
+        #content{
+        justify-content: center !important;
+        align-items: center !important;
+        
+        h1{
+            text-align: center !important;
+        }
+    }
+}
+}
+@media screen and (max-width:1024px) {
+.intro {
+    min-height: 75dvh !important;
+    h1{
+        font-size: 2rem !important;
+    }
+    
+#content {
+    min-height: 100%;
+h1{
+    font-size: 25px;
+}
+}
+}
+}
+@media screen and (max-width:913px) {
+.intro{
+    min-height: auto !important;
+
+}
+}
+ 
+ 
+@media screen and (max-width:768px) {
+    
+        .intro {
+         
+        
+        #content{
+            min-height: 100%;
+            margin-bottom: 0;
+            padding: 0;
+            #heading{
+               text-shadow: none;
+               h1{
+                
+                font-size: 1.5rem !important;
+               }
+               p{
+                font-size: 13.5px;
+                 
+               }
+            }
+        }
+    
+}
+}
